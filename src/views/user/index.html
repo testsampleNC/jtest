@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User View</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Assuming you might add some CSS -->
+</head>
+<body>
+  <h1>User Page</h1>
+  
+  <div id="userInfo">
+    <p>User ID: <span id="userId"></span></p>
+    <p>Display Name: <span id="displayName"></span></p>
+  </div>
+
+  <div id="ticketSection">
+    <h2>Your Ticket</h2>
+    <p>Ticket Number: <span id="ticketNumber">No active ticket</span></p>
+    <p>Status: <span id="ticketStatus">N/A</span></p>
+    <p>Location: <span id="ticketLocation">N/A</span></p>
+    <p>Created At: <span id="ticketCreatedAt">N/A</span></p>
+  </div>
+
+  <button id="issueTicketBtn">Issue New Ticket</button>
+  <!-- fetchActiveTicketBtn was previously hidden and not used, removing for clarity -->
+  <!-- <button id="fetchActiveTicketBtn" style="display:none;">Refresh Ticket</button> -->
+
+  <div id="currentCallsSection">
+    <h2>Currently Called Numbers</h2>
+    <p>For Assessment: <span id="calledAssessmentNumbers">Loading...</span></p>
+    <p>For Purchase: <span id="calledPurchaseNumbers">Loading...</span></p>
+    <p id="userCallNotification" style="font-weight: bold; color: green;"></p> 
+  </div>
+
+  <div id="messages">
+    <!-- Errors and messages will be displayed here -->
+  </div>
+
+  <script src="/js/user.js"></script> <!-- Link to the new JS file -->
+</body>
+</html>

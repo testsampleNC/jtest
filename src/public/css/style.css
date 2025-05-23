@@ -1,0 +1,79 @@
+/* Basic styles for the LINE Mini-App */
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  color: #00B900; /* LINE Green */
+}
+
+#userInfo, #ticketSection {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#userInfo p, #ticketSection p {
+  margin: 5px 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+button {
+  background-color: #00C300; /* LINE Green variant */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #00a000;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#messages p {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#messages .info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3; /* Blue */
+  color: #2196F3;
+}
+
+#messages .success {
+  background-color: #d4edda;
+  border-left: 6px solid #28a745; /* Green */
+  color: #155724;
+}
+
+#messages .warning {
+  background-color: #fff3cd;
+  border-left: 6px solid #ffc107; /* Yellow */
+  color: #856404;
+}
+
+#messages .error {
+  background-color: #f8d7da;
+  border-left: 6px solid #dc3545; /* Red */
+  color: #721c24;
+}

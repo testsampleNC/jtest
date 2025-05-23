@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Assessment Call</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Assuming shared or admin-specific CSS -->
+</head>
+<body>
+  <h1>Admin - Assessment Call</h1>
+
+  <div id="adminAuthStatus">
+    <p>Verifying admin access...</p>
+  </div>
+
+  <div id="adminControls" style="display:none;">
+    <h2>Assessment Queue</h2>
+    <ul id="assessmentQueueList">
+      <!-- Tickets waiting for assessment will be listed here -->
+    </ul>
+    <button id="callNextAssessmentBtn">Call Next for Assessment</button>
+
+    <div id="lastCalledTicketSection" style="margin-top: 20px;">
+      <h3>Last Called Ticket</h3>
+      <div id="lastCalledTicketDetails">
+        <p>No ticket called yet.</p>
+        <!-- Button will be dynamically added/shown by JS if a ticket is in 'called_assessment' status -->
+      </div>
+      <button id="markAssessmentCompleteBtn" style="display:none; margin-top: 10px;">Mark Assessment Complete</button>
+    </div>
+  </div>
+
+  <hr style="margin: 30px 0;">
+
+  <div id="purchaseCallSection">
+    <h2>Purchase Call</h2>
+    <h3>Tickets Waiting for Purchase</h3>
+    <ul id="purchaseQueueList">
+      <!-- Tickets waiting for purchase will be listed here -->
+    </ul>
+    <div id="lastCalledPurchaseTicketSection" style="margin-top: 20px;">
+      <h3>Last Ticket Called for Purchase</h3>
+      <div id="lastCalledPurchaseTicketDetails">
+        <p>No ticket called for purchase yet.</p>
+        <!-- Button will be dynamically added/shown by JS if a ticket is in 'called_purchase' status -->
+      </div>
+      <button id="markTicketDoneBtn" style="display:none; margin-top: 10px;">Mark Transaction Complete</button>
+    </div>
+  </div>
+
+  <div id="adminMessages" style="margin-top: 20px;">
+    <!-- Admin messages will be displayed here -->
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

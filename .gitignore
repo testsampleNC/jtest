@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Production
+build/
+dist/
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Environment Variables
+.env*
+!.env.example
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Firebase
+.firebase/
+firebase-debug.log
+database-debug.log
+
+# Misc
+.idea/
+*.iml
+
+# Coverage
+coverage/
+.nyc_output/
